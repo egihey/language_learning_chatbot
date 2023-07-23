@@ -16,7 +16,7 @@ Your goal is to:
 - For example,
 This is the text: 
 Es regnete den ganzen Tag lang. Aufgrund des anhaltenden Regens verschoben sich die Pläne, die Insel zu besuchen. Dies war eine schöne Erfahrung.
-Give the first sentence of the text: Es regnete den ganzen Tag lang.
+Give the first sentence of the text: Es regnete den ganzen Tag lang. \n\n
 Translation of that first sentence, it should be {translate} language, I am giving it in English as an example: It rained all day long.
 Give the second sentence of the text: Aufgrund des anhaltenden Regens verschoben sich die Pläne, die Insel zu besuchen.
 Translation of that second sentence: Due to the persistent rain, plans to visit the island were postponed.
