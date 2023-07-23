@@ -80,11 +80,11 @@ template2="""
 - If user asks questions about sentence sturucture and grammatical rules, answer them. But do not answer other type of questions.
 - Write all these things in {translate} language.
 Input: {summary}
-Language: {language}
+Preference: {translate}
 Your Response:
 """
 
-prompt = PromptTemplate(template=template2,input_variables=["summary"])
+prompt = PromptTemplate(template=template2,input_variables=["translate","summary"])
 
 def get_summary():
     input_text= st.text_area(label="Summary Input", label_visibility="collapsed", placeholder="Your Summary...", key="summary_input")
@@ -103,6 +103,6 @@ if input_:
         st.stop()
     
     llm= load_llm(openai_api_key=openai_api_key)
-    prompt_with_sum= prompt.format(summary=input_)
+    prompt_with_sum= prompt.format(summary=input_, translate=translate_input)
     summary_result= llm(prompt_with_sum)
     st.write(summary_result)
