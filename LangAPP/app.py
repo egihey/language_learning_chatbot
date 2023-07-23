@@ -40,7 +40,7 @@ def load_llm(openai_api_key):
 st.set_page_config(page_title="Reading-Writing", page_icon=":robot:")
 st.header("Generate Text")
 
-st.markdown("##Enter Your Level to generate Text")
+st.markdown("**Read & Write**")
 
 def get_api_key():
     input_text=st.text_input(label="OpenAI API Key", placeholder="Ex: sk-2twmA8tfCb8un4...", key="openai_api_key_input")
