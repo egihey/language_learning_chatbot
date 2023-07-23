@@ -78,6 +78,8 @@ Input: {summary}
 Your Response:
 """
 
+prompt = PromptTemplate(template=template2,input_variables=["summary"])
+
 def get_summary():
     input_text= st.text_area(label="Summary Input", label_visibility="collapsed", placeholder="Your Summary...", key="summary_input")
     return input_text
@@ -94,7 +96,6 @@ if input_:
         st.warning('Please insert OpenAI API Key. Instructions [here](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key)', icon="⚠️")
         st.stop()
     
-    prompt = PromptTemplate(template=template2,input_variables=["summary"])
     llm= load_llm(openai_api_key=openai_api_key)
     prompt_with_sum= prompt.format(summary=input_)
     summary_result= llm(prompt_with_sum)
