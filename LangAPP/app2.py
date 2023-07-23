@@ -10,7 +10,7 @@ from langchain.llms import OpenAI
 
 template="""
 Your goal is to:
-- Generate {long} paragraph long text 
+- Generate {long} paragraph long text in a {level} proficiency level 
 - Give the first sentence of the text, Jump to a new line, Write the translation of the first sentence to user's preferred {translate} language within ().
 - Continue by first writing the sentence, Jump to a new line, Then its translation within ()
 - For example,
@@ -74,8 +74,7 @@ st.write(result)
 
 template2="""
 - After the user writes a summary, evaluate that summary, indicate what the user did wrong grammatically and 
-- Write take aways as bullet points
-- Show other 1-2 paragraph long alternative ways to write summary about that text.
+- Show 2 other alternative ways to write summary about that text.
 - Write these alternatives with its sentence sturucture and grammatical rules, and they should be short. 
 - If user asks questions about sentence sturucture and grammatical rules, answer them. But do not answer other type of questions.
 - Write all these things in {translate} language.
