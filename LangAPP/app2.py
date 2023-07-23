@@ -73,7 +73,8 @@ result=llm(prompt_with_sum)
 st.write(result)
 
 template2="""
-- After the user writes a summary, evaluate that summary, explain what the user did wrong grammatically 
+- After the user writes a summary, evaluate that summary, explain what the user did wrong grammatically
+- Do not write the user' summary again 
 - Show 2 other alternative ways to write summary about that text.
 - Explain the sentence sturucture and grammatical rules of these alternatives, and they should be short. 
 - If user asks questions about sentence sturucture and grammatical rules, answer them. But do not answer other type of questions.
