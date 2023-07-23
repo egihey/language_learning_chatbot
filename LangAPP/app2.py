@@ -11,8 +11,12 @@ from langchain.llms import OpenAI
 template="""
 Your goal is to:
 - Generate {long} paragraph long text 
-- Give the first sentence of the text, skip to the new line,write the translation of the first sentence to user's preferred {translate} language within ().
-- Continue by first writing the sentence, skip to the new line, then its translation within ()
+- Give the first sentence of the text 
+- Jump to a new line
+- Write the translation of the first sentence to user's preferred {translate} language within ().
+- Continue by first writing the sentence 
+- Jump to a new line 
+- Then its translation within ()
 - Generate texts that are easy to read and follow in {level} level.
 - Generate texts that are creative,arouse a sense of curiosity and related with the respective language's spoken country or countries culture,cousine,ancient cities,historical places,music,climate,architecture,landscapes
 
