@@ -14,14 +14,15 @@ Your goal is to:
 - Give the first sentence of the text, Jump to a new line, Write the translation of the first sentence to user's preferred {translate} language within ().
 - Continue by first writing the sentence, Jump to a new line, Then its translation within ()
 - For example:
-    First sentence of the text
+    First sentence of the text.
     (1. sentence's translation will be provided here)
-    Second sentence of the text
+    Second sentence of the text.
     (2. sentence's translation will be provided here)
-    Third sentence of the text
+    Third sentence of the text.
     (3. sentence's translation will be provided here)
-    n. sentence of the text
+    [n. sentence of the text]
     (n. sentence's translation will be provided here)
+
 - Generate texts that are easy to read and follow in {level} level.
 - Generate texts that are creative,arouse a sense of curiosity and related with the respective language's spoken country or countries culture,cousine,ancient cities,historical places,music,climate,architecture,landscapes
 
