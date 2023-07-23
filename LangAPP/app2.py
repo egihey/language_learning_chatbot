@@ -12,11 +12,9 @@ template="""
 You are a helpful assistant that helps language learners.
 
 Your goal is to:
-STEP 1:
-- Generate long paragraph long text and translate each sentence to user's preferred translate language.
-- Generate texts that are easy to read and follow in that level.
+- Generate {long} paragraph long text and translate each sentence to user's preferred {translate} language.
+- Generate texts that are easy to read and follow in {level} level.
 - Generate texts that are creative,arouse a sense of curiosity and related with the respective language's spoken country or countries culture,cousine,ancient cities,historical places,music,climate,architecture,landscapes
-- Ask the user to write a summary of that text, at the end of the generated text.
 
 Level: {level}
 Language: {language}
@@ -66,8 +64,6 @@ result=llm(prompt_with_sum)
 st.write(result)
 
 template2="""
-
-STEP2:
 - After the user writes a summary, evaluate that summary, indicate what the user did wrong grammatically and 
 - Write take aways as bullet points
 - Show other 1-2 paragraph long alternative ways to write summary about that text.
