@@ -57,7 +57,7 @@ with col2:
     level=st.selectbox("What is your level of proficiency",('A1','A2','B1','B2','C1'))    
 
 with col3:
-    translate_input= st.selectbox("How many paragraphs would you like to read?",('English','Turkish','German','Spanish','Portuguese'))
+    translate_input= st.selectbox("Which language do you want to translate to?",('English','Turkish','German','Spanish','Portuguese'))
 
 with col4:
     long_inputs= st.selectbox("How many paragraphs would you like to read?",('1-2','2-3','3-4','4-5','5-6'))
@@ -78,8 +78,9 @@ template2="""
 - Show other 1-2 paragraph long alternative ways to write summary about that text.
 - Write these alternatives with its sentence sturucture and grammatical rules, and they should be short. 
 - If user asks questions about sentence sturucture and grammatical rules, answer them. But do not answer other type of questions.
-
+- Write all these things in {translate} language.
 Input: {summary}
+Language: {language}
 Your Response:
 """
 
