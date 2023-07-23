@@ -2,7 +2,7 @@ from langchain import PromptTemplate
 
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
-memory = ConversationBufferMemory(memory_key="chat_history",return_messages=True)
+memory = ConversationBufferMemory(memory_key="history",return_messages=True)
 import streamlit as st
 from langchain import PromptTemplate
 from langchain.llms import OpenAI
